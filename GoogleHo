@@ -1,5 +1,5 @@
  //2016/11/11  By: LR3800
-//±¾ÈËĞÂÊÖ,Ï£ÍûÄãÄÜºÍÎÒÒ»ÆğÍêÉÆ¸ÃÏîÄ¿
+//æœ¬äººæ–°æ‰‹,å¸Œæœ›ä½ èƒ½å’Œæˆ‘ä¸€èµ·å®Œå–„è¯¥é¡¹ç›®
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -8,8 +8,8 @@ public class GoogleHosts {
 	public static void main( String[] args ) throws Exception
 	{
 		
-		System.out.println("ÕıÔÚ»ñÈ¡×îĞÂ HostsÎÄ¼ş... ...");
-		/*ÏÂÔØ */
+		System.out.println("æ­£åœ¨è·å–æœ€æ–° Hostsæ–‡ä»¶... ...");
+		/*ä¸‹è½½ */
 		String			remoteFilePath	= "https://hosts2017.github.io/Hosts/hosts";
 		String			localFilePath	= System.getProperty( "user.dir" ) + "/hosts";
 		URL			urlfile		= null;
@@ -50,13 +50,13 @@ public class GoogleHosts {
 				e.printStackTrace();
 			}
 		}
-		/*ÏÂÔØ */
+		/*ä¸‹è½½ */
 
 
 		/* OSinfo.getOSname(); */
-		System.out.println("¡¾GoogleHostsAidesv1.0 Hosts¸üĞÂÖúÊÖ  ¿çÆ½Ì¨Windows Unix¡¢linux¡¢Macintosh¡¿");
+		System.out.println("ã€GoogleHostsAidesv1.0 Hostsæ›´æ–°åŠ©æ‰‹  è·¨å¹³å°Windows Unixã€linuxã€Macintoshã€‘");
 		
-		System.out.println( " ÇëÑ¡ÔñÄúµÄ²Ù×÷ÏµÍ³?(ÊäÈëÊı×Ö)" + "\n" + " 1.Microsoft Windows NT¡¢2000¡¢XP¡¢2003¡¢Vista¡¢2008¡¢7¡¢2012¡¢8¡¢8.1¡¢10  \n 2.Unix¡¢linuxÏµÍ³¡¢  Apple Macintosh " );
+		System.out.println( " è¯·é€‰æ‹©æ‚¨çš„æ“ä½œç³»ç»Ÿ?(è¾“å…¥æ•°å­—)" + "\n" + " 1.Microsoft Windows NTã€2000ã€XPã€2003ã€Vistaã€2008ã€7ã€2012ã€8ã€8.1ã€10  \n 2.Unixã€linuxç³»ç»Ÿã€  Apple Macintosh " );
 		Scanner in2	= new Scanner( System.in );
 		int	a	= in2.nextInt();
 		if ( a == 1 )
@@ -73,7 +73,7 @@ public class GoogleHosts {
 			}catch ( IOException e ) {
 				System.out.println( e.toString() );
 			}
-			System.out.println( "---------- \n  ³É¹¦Ğ´Èë¨Œ \n  ---------- \n ×¢Òâ: Google µÈÍøÕ¾ÇëÍ¨¹ı https ·½Ê½·ÃÎÊ£¬Èç https://www.google.com/ncr" );
+			System.out.println( "---------- \n  æˆåŠŸå†™å…¥â–½ \n  ---------- \n æ³¨æ„: Google ç­‰ç½‘ç«™è¯·é€šè¿‡ https æ–¹å¼è®¿é—®ï¼Œå¦‚ https://www.google.com/ncr" );
 			BufferedReader br = null;
 			try {
 				Process p = Runtime.getRuntime().exec( "ipconfig /flushdns" );
@@ -111,7 +111,7 @@ public class GoogleHosts {
 			}catch ( IOException e ) {
 				System.out.println( e.toString() );
 			}
-			System.out.println( "---------- \n  ³É¹¦Ğ´Èë¨Œ \n  ---------- \n ×¢Òâ: Google µÈÍøÕ¾ÇëÍ¨¹ı https ·½Ê½·ÃÎÊ£¬Èç https://www.google.com/ncr" );
+			System.out.println( "---------- \n  æˆåŠŸå†™å…¥â–½ \n  ---------- \n æ³¨æ„: Google ç­‰ç½‘ç«™è¯·é€šè¿‡ https æ–¹å¼è®¿é—®ï¼Œå¦‚ https://www.google.com/ncr" );
 			//String[] cmds = { "/bin/sh", "-c", "ps -ef|grep java" };
 			Process pro = Runtime.getRuntime().exec( "sudo systemctl restart NetworkManager" );
 			pro.waitFor();
